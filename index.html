@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Novapar Systems — Precision Engineering & Automation</title>
+  <meta name="description" content="Novapar Systems: precision engineering, device calibration, controls integration, commissioning, troubleshooting, and networking for industrial and life‑sciences facilities." />
+  <meta property="og:title" content="Novapar Systems — Precision Engineering & Automation" />
+  <meta property="og:description" content="Calibration • Integration • Commissioning • Troubleshooting • Networking" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <style>
+    :root{
+      --bg:#0b1020;          /* deep navy */
+      --panel:#111832;       /* card */
+      --ink:#e8edf6;         /* primary text */
+      --muted:#a9b3c7;       /* secondary text */
+      --accent:#5aa2ff;      /* link/cta */
+      --accent-2:#8bd4ff;    /* hover */
+      --line:#223057;        /* borders */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{color:var(--accent-2)}
+    .wrap{max-width:1120px;margin:0 auto;padding:1.25rem}
+    header{position:sticky;top:0;background:linear-gradient(to bottom, rgba(11,16,32,.98), rgba(11,16,32,.85));backdrop-filter:saturate(120%) blur(6px);z-index:50;border-bottom:1px solid var(--line)}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+    .brand{display:flex;align-items:center;gap:.75rem}
+    .logo{width:34px;height:34px}
+    .brand h1{font-size:1.05rem;letter-spacing:.12em;margin:0;font-weight:700}
+    .menu a{margin-left:1rem;font-size:.95rem}
+    .btn{display:inline-block;padding:.8rem 1.1rem;border-radius:12px;background:var(--accent);color:#0a1020;font-weight:700;border:1px solid transparent}
+    .btn:hover{background:var(--accent-2)}
+    .btn.outline{background:transparent;color:var(--ink);border-color:var(--line)}
+
+    .hero{padding:5.5rem 0 3.5rem;border-bottom:1px solid var(--line);background:radial-gradient(1200px 600px at 20% -10%, #1a2750 0%, transparent 60%)}
+    .hero h2{font-size:2.6rem;line-height:1.08;margin:0 0 .75rem}
+    .hero p{max-width:60ch;color:var(--muted);font-size:1.12rem;margin:0 0 1.5rem}
+    .badges{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+    .badge{padding:.45rem .7rem;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.85rem}
+
+    .grid{display:grid;gap:1.25rem}
+    @media(min-width:960px){.grid{grid-template-columns:1fr 1fr}}
+    section{padding:3rem 0;border-bottom:1px solid var(--line)}
+    h3{margin:0 0 .75rem;font-size:1.6rem}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:1.25rem}
+    ul.clean{list-style:none;padding:0;margin:.25rem 0 0}
+    ul.clean li{padding:.45rem 0;border-bottom:1px dashed rgba(255,255,255,.06)}
+    ul.clean li:last-child{border-bottom:0}
+
+    .logo-lockup{display:flex;align-items:center;gap:.85rem;margin:1.25rem 0 2rem}
+    .wordmark{font-weight:900;letter-spacing:.18em}
+
+    .cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
+
+    footer{padding:2.5rem 0;color:var(--muted)}
+    .small{font-size:.9rem}
+    .cols{display:grid;gap:1rem}
+    @media(min-width:720px){.cols{grid-template-columns:1fr 1fr 1fr}}
+    .pill{display:inline-flex;align-items:center;gap:.5rem;padding:.45rem .65rem;border:1px solid var(--line);border-radius:12px;color:var(--muted);margin:.25rem .35rem .25rem 0}
+    .divider{height:1px;background:var(--line);margin:1rem 0}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">
+          <!-- Inline SVG logo: Nordic starburst + N mark -->
+          <svg class="logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Novapar logo">
+            <circle cx="50" cy="50" r="46" stroke="#223057" stroke-width="4" fill="#111832"/>
+            <g fill="#5aa2ff">
+              <rect x="48" y="15" width="4" height="70" rx="2"/>
+              <rect x="15" y="48" width="70" height="4" rx="2"/>
+              <rect x="28" y="28" width="4" height="44" rx="2" transform="rotate(-45 28 28)"/>
+              <rect x="68" y="28" width="4" height="44" rx="2" transform="rotate(45 68 28)"/>
+            </g>
+          </svg>
+          <h1>NOVAPAR</h1>
+        </div>
+        <div class="menu">
+          <a href="#services">Services</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#contact" class="btn outline">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="logo-lockup">
+          <svg class="logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" stroke="#223057" stroke-width="4" fill="#111832"/>
+            <g fill="#5aa2ff">
+              <rect x="48" y="15" width="4" height="70" rx="2"/>
+              <rect x="15" y="48" width="70" height="4" rx="2"/>
+              <rect x="28" y="28" width="4" height="44" rx="2" transform="rotate(-45 28 28)"/>
+              <rect x="68" y="28" width="4" height="44" rx="2" transform="rotate(45 68 28)"/>
+            </g>
+          </svg>
+          <div>
+            <div class="wordmark">NOVAPAR SYSTEMS</div>
+            <div class="muted">Precision Engineering • Controls Integration • Calibration</div>
+          </div>
+        </div>
+        <h2>Engineering you can trust. Integration that simply works.</h2>
+        <p>
+          Novapar delivers commissioning, device calibration, PLC/SCADA integration, and on‑site troubleshooting for regulated and industrial facilities. We connect sensors, logic, and networks so your production runs safely and efficiently.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#contact">Request a quote</a>
+          <a class="btn outline" href="#services">Explore services</a>
+        </div>
+        <div class="badges">
+          <div class="badge">NIST‑traceable calibration</div>
+          <div class="badge">PLC: Siemens • Allen‑Bradley • Beckhoff</div>
+          <div class="badge">Fieldbus: AS‑i • Profibus • Ethernet/IP</div>
+          <div class="badge">VFD Programming (Toshiba & more)</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap grid">
+        <div class="card">
+          <h3>Core Services</h3>
+          <ul class="clean">
+            <li>Device Calibration (pressure, flow, temperature, integrity testers)</li>
+            <li>Controls Integration (PLC, HMI/SCADA, vision, field I/O)</li>
+            <li>Commissioning & Site Acceptance (I/O check‑out, FAT/SAT)</li>
+            <li>Troubleshooting & Remediation (downtime response, root cause)</li>
+            <li>Industrial Networking (VLANs, routing, secure remote access)</li>
+            <li>Machine Safety (light curtains, photoeyes, interlock validation)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Brands & Technologies</h3>
+          <div class="divider"></div>
+          <div>
+            <span class="pill">MilliporeSigma</span>
+            <span class="pill">Pepperl+Fuchs</span>
+            <span class="pill">DeltaV</span>
+            <span class="pill">Mettler Toledo</span>
+            <span class="pill">Cognex Vision</span>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <span class="pill">Siemens TIA</span>
+            <span class="pill">Allen‑Bradley</span>
+            <span class="pill">Beckhoff</span>
+            <span class="pill">ASI / Profibus</span>
+            <span class="pill">Toshiba VFD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities">
+      <div class="wrap cols">
+        <div class="card">
+          <h3>Industries</h3>
+          <ul class="clean">
+            <li>Pharmaceutical & Life Sciences Automation</li>
+            <li>Warehouse & Material Handling Systems</li>
+            <li>Aviation Support (Continental, Lycoming, Garmin)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Documentation & Quality</h3>
+          <ul class="clean">
+            <li>GxP‑friendly SOPs and change control support</li>
+            <li>NIST‑traceable calibration records</li>
+            <li>FAT/SAT, IOQ, and turnover packages</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Differentiators</h3>
+          <ul class="clean">
+            <li>Rapid on‑site response and root‑cause depth</li>
+            <li>Multi‑vendor PLC & network fluency</li>
+            <li>Clean, reproducible engineering artifacts</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap grid">
+        <div class="card">
+          <h3>Contact</h3>
+          <p class="muted small">Prefer email? Use the form or click the email link to open your client. The form can be connected to Formspree/Netlify later.</p>
+          <form class="clean" method="POST" action="#" onsubmit="alert('Thank you — message captured locally. Connect a form endpoint (e.g., Formspree) before going live.'); return false;">
+            <div style="display:grid;gap:.75rem;grid-template-columns:1fr 1fr">
+              <input name="name" placeholder="Your name" required style="padding:.8rem;border-radius:12px;border:1px solid var(--line);background:#0f1731;color:var(--ink)">
+              <input name="email" type="email" placeholder="Email" required style="padding:.8rem;border-radius:12px;border:1px solid var(--line);background:#0f1731;color:var(--ink)">
+            </div>
+            <input name="company" placeholder="Company (optional)" style="margin-top:.75rem;padding:.8rem;border-radius:12px;border:1px solid var(--line);background:#0f1731;color:var(--ink)">
+            <textarea name="message" placeholder="How can we help?" rows="5" style="margin-top:.75rem;padding:.8rem;border-radius:12px;border:1px solid var(--line);background:#0f1731;color:var(--ink)"></textarea>
+            <div class="cta">
+              <button class="btn" type="submit">Send message</button>
+              <a class="btn outline" href="mailto:contact@novapar.com">Email us directly</a>
+            </div>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Company</h3>
+          <ul class="clean">
+            <li><strong>Novapar Systems</strong> — Virginia, USA</li>
+            <li>Availability: Mon–Fri • 8:00a–5:00p ET</li>
+            <li>Insurance & safety documentation available upon request</li>
+            <li>W‑9 / COI provided during vendor onboarding</li>
+          </ul>
+          <div class="divider"></div>
+          <p class="small muted">© <span id="year"></span> Novapar Systems. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap small">
+      <div>Built with performance in mind — no external frameworks, just clean HTML + CSS.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

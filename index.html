@@ -65,6 +65,48 @@
     .muted{color:var(--muted)}
     .small{font-size:.9rem}
 
+    /* Industry image cards */
+    .industry-grid{
+      display:grid;
+      gap:1.25rem;
+      margin-top:1.5rem;
+    }
+    @media(min-width:900px){
+      .industry-grid{grid-template-columns:1fr 1fr;}
+    }
+    .industry-card{
+      position:relative;
+      overflow:hidden;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background:var(--panel);
+    }
+    .industry-card img{
+      display:block;
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      filter:saturate(115%);
+      transform:scale(1.02);
+      transition:transform .4s ease, filter .4s ease;
+    }
+    .industry-card:hover img{
+      transform:scale(1.06);
+      filter:saturate(130%);
+    }
+    .industry-card-content{
+      padding:.9rem 1rem 1.1rem;
+    }
+    .industry-card h4{
+      margin:0 0 .25rem;
+      font-size:1.05rem;
+    }
+    .industry-card p{
+      margin:0;
+      font-size:.9rem;
+      color:var(--muted);
+    }
+
     footer{padding:2.5rem 0;color:var(--muted)}
   </style>
 </head>
@@ -97,7 +139,7 @@
         </div>
 
         <h2>Engineering you can trust. Integration that simply works.</h2>
-        <p>NOVAPAR delivers commissioning, device calibration, PLC/SCADA integration, and on-site troubleshooting for regulated and industrial facilities. We connect sensors, logic, and networks so your production runs safely and efficiently.</p>
+        <p>NOVAPAR delivers commissioning, device calibration, PLC/SCADA integration, and on-site troubleshooting for regulated and industrial facilities. Based in Harrisonburg, Virginia, we connect sensors, logic, and networks so your production runs safely and efficiently.</p>
 
         <div class="badges">
           <div class="badge">NIST-traceable calibration</div>
@@ -109,6 +151,35 @@
         <div style="margin-top:1.1rem">
           <a class="btn" href="#contact">Request a quote</a>
           <a class="btn outline" href="NOVAPAR_Capability_Statement.pdf" target="_blank" rel="noopener">Capability Statement (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries with imagery -->
+    <section id="sectors">
+      <div class="wrap">
+        <h3>Industries in Focus</h3>
+        <p class="muted small">
+          NOVAPAR supports both regulated pharmaceutical manufacturing and high-reliability aerospace and industrial systems,
+          with on-site support available out of Harrisonburg, VA.
+        </p>
+
+        <div class="industry-grid">
+          <article class="industry-card">
+            <img src="pharma.jpg" alt="Stainless pharmaceutical process equipment">
+            <div class="industry-card-content">
+              <h4>Pharmaceutical & Life Sciences</h4>
+              <p>Stainless process equipment, filtration skids, utilities, and instrumentation requiring precise control and calibration.</p>
+            </div>
+          </article>
+
+          <article class="industry-card">
+            <img src="aerospace.jpg" alt="Aircraft cockpit and avionics controls">
+            <div class="industry-card-content">
+              <h4>Aerospace & Industrial</h4>
+              <p>Avionics, test stands, motion systems, and PLC/VFD-driven equipment where reliability and traceability are critical.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -205,7 +276,7 @@
         <div class="card">
           <h3>Company</h3>
           <ul class="clean">
-            <li><strong>NOVAPAR</strong> — Virginia, USA</li>
+            <li><strong>NOVAPAR</strong> — Harrisonburg, Virginia, USA</li>
             <li>Availability: Mon–Fri • 8:00a–5:00p ET</li>
             <li>Insurance & safety documentation available upon request</li>
             <li>W-9 / COI provided during vendor onboarding</li>
